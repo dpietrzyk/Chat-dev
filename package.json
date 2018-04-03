@@ -1,11 +1,12 @@
 {
-  "name": "16_websockets",
+  "name": "Chat developer version",
   "version": "1.0.0",
-  "description": "<img alt=\"Logo\" src=\"http://coderslab.pl/svg/logo-coderslab.svg\" width=\"400\">",
+  "description": "Chat desc",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "chat": "node main.js"
+    "chat": "node main.js",
+    "start": "node ./main.js"
   },
   "author": "",
   "license": "ISC",
