@@ -46,6 +46,8 @@ class Chat {
         this._defaultRoomName = 'Chat';
         this._rooms = [new Room(this._defaultRoomName, null)];
 
+        this._port = process.env.OPENSHIFT_NODEJS_PORT || 3000;
+        this._ip = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
     }
 
     _initComponents() {
@@ -77,8 +79,8 @@ class Chat {
     }
 
     _initServer() {
-        this._http.listen(3000, () => {
-            console.log('Server start at http://localhost:3000');
+        this._http.listen(this._port, this._ip, () => {
+            console.log(`Server start at http://${this._ip}:${this._ip}`);
         });
     }
 
