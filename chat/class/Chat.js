@@ -46,7 +46,7 @@ class Chat {
         this._defaultRoomName = 'Chat';
         this._rooms = [new Room(this._defaultRoomName, null)];
 
-        this._port = process.env.OPENSHIFT_NODEJS_PORT || 3000;
+        this._port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
         this._ip = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
     }
 
