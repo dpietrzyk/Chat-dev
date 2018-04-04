@@ -80,7 +80,7 @@ class Chat {
 
     _initServer() {
         this._http.listen(this._port, this._ip, () => {
-            console.log(`Server start at http://${this._ip}:${this._ip}`);
+            console.log(`Server start at http://${this._ip}:${this._port}`);
         });
     }
 
